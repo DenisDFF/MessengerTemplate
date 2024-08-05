@@ -1,0 +1,107 @@
+<nav class="account-navbar">
+    <div class="container-fluid text-center account-container">  
+        <a href="#" class="dropdown-toggle pull-right account-dropdown" data-toggle="dropdown">
+            <span class="hidden-xs account-text">{{user | uppercase}}</span>
+        </a>
+    </div>
+</nav>
+<div class="hold-transition skin-blue sidebar-mini">
+
+        <div class="">
+            <div class="box" style=" background-color: #030d4631; border-radius: 10px; border: none;">
+                <div class="box-header with-border messenger-header">
+                    <h3 class="box-title messenger-title" style="color: azure;">Online Members</h3>
+        
+                    <div class="box-tools pull-right messenger-tools">
+                        <span class="label label-danger messenger-label">{{users.length}}</span>
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body direct-chat-messages messenger-body">
+                    <ul class="users-list clearfix messenger-users-list">
+                        <li ng-repeat="user in users" class="messenger-user">
+                            <button data-toggle="modal" data-target="#myModal" ng-click="friend_request(user)" class="messenger-user-button"> 
+                                <a class="users-list-name messenger-user-name">{{user}}</a>
+                            </button>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="">
+            <div class="box messenger-box" style=" background-color: #030d4631; border-radius: 10px; border: none;">
+                <div class="box-header with-border messenger-header">
+                    <h3 class="box-title messenger-title" style="color: azure;">Friends</h3>
+        
+                    <div class="box-tools messenger-tools">
+                        <span class="label label-danger messenger-label">{{online_friends.length}}</span>
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body direct-chat-messages messenger-body">
+                    <ul class="users-list clearfix messenger-users-list">
+                        <li ng-repeat="friend in online_friends track by $index" class="">
+                            <button ng-click="chat_popup(friend)" class="messenger-user-button"> 
+                                <a style="color: #fff;">{{friend}}</a>
+                            </button>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 pull-right dice-container" ng-controller="diceRoller">
+            <div class="box box-primary dice-box">
+                <div class="box-header with-border dice-header">
+                    <h3 class="box-title dice-title">Roll a Dice</h3>
+                    <div class="box-tools dice-tools">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body direct-chat-messages dice-body">
+                    <div class="dice-buttons">
+                        <button class="btn btn-primary dice-btn" ng-click="rollDice(4)">1к4</button>
+                        <button class="btn btn-primary dice-btn" ng-click="rollDice(6)">1к6</button>
+                        <button class="btn btn-primary dice-btn" ng-click="rollDice(8)">1к8</button>
+                        <button class="btn btn-primary dice-btn" ng-click="rollDice(10)">1к10</button>
+                        <button class="btn btn-primary dice-btn" ng-click="rollDice(12)">1к12</button>
+                        <button class="btn btn-primary dice-btn" ng-click="rollDice(20)">1к20</button>
+                    </div>
+                    <div class="dice-result">
+                        <h4>Result: {{diceResult}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Are you sure you want to connect to {{friend}}?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="confirm()">ok</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
