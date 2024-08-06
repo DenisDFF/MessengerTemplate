@@ -27,3 +27,6 @@ This is most unsafe messenger in world. He dont have no one protocols encryption
 ## What it's for
 
 I'm taking it for playing and learning, but this template could be a messenger for dnd for example. I added one DiseRoller controller and one block for an example. 
+
+
+!![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/DenisDFF/MessengerTemplate/tree/main/screenshots/chat.png)
