@@ -16,6 +16,8 @@ I don't like the way this "Facebook" design looks in the old project, and when I
 
 ![new design](/screenshots/13412423423.png)
 
+![new design](/screenshots/124123123123412.png)
+
 I don't know where to place it, but let it be in the design. I removed the one block with the group chat. I think group chat is a good idea, but not in a standard messenger on the homepage. Anyway, I deleted it. I will revisit it in the future though. 
 
 ## What with conntroller
