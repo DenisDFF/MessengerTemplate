@@ -12,6 +12,8 @@ The first thing that happened to this old project was timing. Mongoose is obsole
 
 I don't like the way this "Facebook" design looks in the old project, and when I don't like something, I try to change it. The catalog of the old project had a lot of photos and avatars in it, but, I don't know why, the author doesn't use them. I changed the color, created new styles and added photos. I think new design looks horrible too, but importent thit i made it.
 
+![old design](/screenshots/chat.png)
+
 I don't know where to place it, but let it be in the design. I removed the one block with the group chat. I think group chat is a good idea, but not in a standard messenger on the homepage. Anyway, I deleted it. I will revisit it in the future though. 
 
 ## What with conntroller
@@ -27,6 +29,3 @@ This is most unsafe messenger in world. He dont have no one protocols encryption
 ## What it's for
 
 I'm taking it for playing and learning, but this template could be a messenger for dnd for example. I added one DiseRoller controller and one block for an example. 
-
-
-!![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/DenisDFF/MessengerTemplate/tree/main/screenshots/chat.png)
