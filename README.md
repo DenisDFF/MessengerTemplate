@@ -21,3 +21,9 @@ I didn't change anything in the controller)
 # HOW IT`S PUT TOGETHER
 
 In general all is simple. We have AngularJS, he combineted all parts app, html Bootstrap, NodeJs express and MongoDB. Name for this stack MEAN (MongoDB, Express, Angular, Node). 
+
+This is most unsafe messenger in world. He dont have no one protocols encryptions. And sistem of login logout work without any checs. Even Spring Security work better. Whatever it is, it is there.
+
+## What it's for
+
+I'm taking it for playing and learning, but this template could be a messenger for dnd for example. I added one DiseRoller controller and one block for an example. 
